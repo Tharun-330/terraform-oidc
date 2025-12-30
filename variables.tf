@@ -9,7 +9,7 @@ variable "aws_profile" {
   type        = string
   default     = "gopi"
 }
-
+/*
 variable "access_key" {
   description = "path to shared credentials file"
   type        = string
@@ -21,6 +21,7 @@ variable "secret_key" {
   type        = string
   default     = "C:/Users/tharunkk/.aws/credentials"
 }
+*/
 
 variable "vpc_cidr" {
   description = "CIDR block for the VPC"
