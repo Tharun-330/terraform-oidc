@@ -10,7 +10,7 @@ data "aws_iam_policy_document" "assume_role" {
 }
 
 resource "aws_iam_role" "instance_role" {
-  name               = "tf-ec2-instance-role"
+  name               = "gopi-ec2-instance-role"
   assume_role_policy = data.aws_iam_policy_document.assume_role.json
 }
 
@@ -20,6 +20,6 @@ resource "aws_iam_role_policy_attachment" "ssm_attach" {
 }
 
 resource "aws_iam_instance_profile" "instance_profile" {
-  name = "tf-ec2-instance-profile"
+  name = "gopi-ec2-instance-profile"
   role = aws_iam_role.instance_role.name
 }
