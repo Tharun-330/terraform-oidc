@@ -3,13 +3,13 @@ variable "aws_region" {
   type        = string
   default     = "ap-southeast-2"
 }
-
+/*
 variable "aws_profile" {
   description = "Optional AWS CLI profile name"
   type        = string
   default     = "gopi"
 }
-/*
+
 variable "access_key" {
   description = "path to shared credentials file"
   type        = string

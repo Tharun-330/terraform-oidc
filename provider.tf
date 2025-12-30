@@ -10,7 +10,7 @@ terraform {
 
 provider "aws" {
   region     = var.aws_region
-  profile    = var.aws_profile
+  #profile    = var.aws_profile
   #shared_config_files = [var.access_key]
   #shared_credentials_files = [var.secret_key]
 }
